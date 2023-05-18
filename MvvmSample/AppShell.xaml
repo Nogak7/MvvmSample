@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:MvvmSample"
     xmlns:views="clr-namespace:MvvmSample.Views"
     Shell.FlyoutBehavior="Disabled">
-
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems"> 
     <Tab Title="תלמידים" Icon="student.svg">
     <ShellContent
         Title="תלמידים"
@@ -18,5 +18,6 @@
         Title="מורים"
         ContentTemplate="{DataTemplate views:TeacherPage}"
         Route="TecherPage" />
-    </Tab>
+        
+    </Tab></FlyoutItem>
 </Shell>
